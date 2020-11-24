@@ -40,10 +40,10 @@ def extract_titles(filename, all_languages):
                 title = line.strip().lower()
                 if title.startswith('## titlar') or title.startswith('## titles'):
                     parsing_titles = True
-                elif line.strip() == '':
-                    parsing_titles = False
                 elif parsing_titles:
-                    yield line.strip()[2:].strip()
+                    s = line.strip()
+                    if s != '':
+                        yield s[2:].strip()
 
 
 def sort_nicely( key ):
