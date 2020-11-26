@@ -1,8 +1,8 @@
 # titles.py
 
-Extract titles (and alternative titles) from the kodsnack pod.
+Extract titles (and alternative titles) from the [kodsnack podcast](https://kodsnack.se/international/).
 
-Make sure you have the episode repo handy.
+Make sure you have the [episode repo](https://github.com/kodsnack/site/) handy.
 
 ## Examples
 
@@ -16,7 +16,7 @@ titles.py extract ../kodsnack-site/content/avsnitt/ > titles.txt
 
 ### Dump titles
 
-Dump all titles, with "episode file"
+Dump all titles, with "episode file". This is useful to find from which episode a certain title is from.
 
 ```bash
 titles.py dump ../kodsnack-site/content/avsnitt/ > dump.txt
@@ -40,7 +40,7 @@ titles.py csv ../kodsnack-site/content/avsnitt/ > titles.csv
 
 ### English too?
 
-By default, the script only operates on the swedish titles. Add the --all flag to also operate on *both* swedish *and* english titles.
+By default, the script only operates on the swedish titles. Add the --all flag to also operate on both swedish *and* english titles.
 
 ```bash
 titles.py extract ../kodsnack-site/content/avsnitt/ --all > titles.txt
